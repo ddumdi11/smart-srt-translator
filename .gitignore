@@ -1,0 +1,58 @@
+## Python / Build
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+build/
+dist/
+*.egg-info/
+pip-wheel-metadata/
+
+## Virtual environments
+.venv/
+VidScalerSubtitleAdder/.venv/
+
+## Secrets / Env
+.env
+VidScalerSubtitleAdder/.env
+
+## OS / Editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.cache/
+
+## Logs / Temp / Coverage
+*.log
+*.tmp
+*~
+.coverage
+coverage.xml
+htmlcov/
+.tox/
+.nox/
+.hypothesis/
+
+## Project-specific exclusions
+# Remove the demo GUI app from this repo
+VidScalerSubtitleAdder/
+# Internal analysis/notes/demo folders
+Deutsche_Untertitel_Besonderheiten/
+Srt_Analyse/
+Integrationspr*/
+internal_private/
+# Temporary helper scripts
+tmp_*.py
+# Windows reserved name present locally; do not track
+CON
+
+## Bytecode caches under package (defensive)
+smart_srt_translator/**/__pycache__/
+smart_srt_translator.egg-info/
+
+# Large media samples should not be versioned
+Sample/*.mp4
