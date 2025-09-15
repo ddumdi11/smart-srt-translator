@@ -42,3 +42,18 @@ Notes
 - The CLI auto-loads `.env` from the project root to find `OPENAI_API_KEY` and `OPENAI_MODEL`.
 - Optional dependency group `openai` provides the OpenAI client: `pip install smart-srt-translator[openai]`.
 - The package has no required dependencies by default; providers are pluggable.
+
+Pre-release to TestPyPI (via GitHub Actions)
+--------------------------------------------
+- Version bump to a PEP 440 pre-release, e.g., `0.1.3rc1` in `pyproject.toml`.
+- Create a GitHub Pre-release (checkbox "This is a pre-release") with a matching tag (e.g., `v0.1.3-rc1`).
+- The workflow `.github/workflows/publish-testpypi.yml` triggers on pre-releases and publishes to TestPyPI.
+- Required secret: `TEST_PYPI_API_TOKEN` (Settings → Secrets and variables → Actions).
+- Install from TestPyPI for verification:
+  - `python -m pip install --index-url https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple smart-srt-translator[openai]`
+
+Release to PyPI (via GitHub Actions)
+------------------------------------
+- Version bump to a final version (e.g., `0.1.3`).
+- Create a normal GitHub Release (not pre-release) with tag `v0.1.3`.
+- Workflow `.github/workflows/publish.yml` publishes to PyPI using `PYPI_API_TOKEN`.
