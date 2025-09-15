@@ -2,7 +2,7 @@ name: Pre-release to TestPyPI
 
 on:
   release:
-    types: [published, prereleased]
+    types: [prereleased]
 
 jobs:
   build-and-publish-testpypi:
