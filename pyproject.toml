@@ -18,6 +18,12 @@ classifiers = [
 ]
 dependencies = []
 
+[project.urls]
+Homepage = "https://github.com/ddumdi11/smart-srt-translator"
+Repository = "https://github.com/ddumdi11/smart-srt-translator.git"
+Issues = "https://github.com/ddumdi11/smart-srt-translator/issues"
+Changelog = "https://pypi.org/project/smart-srt-translator/#history"
+
 [project.optional-dependencies]
 openai = ["openai>=1.0.0"]
 
