@@ -1,6 +1,10 @@
 Smart SRT Translator
 ====================
 
+![PyPI](https://img.shields.io/pypi/v/smart-srt-translator)
+![Python Versions](https://img.shields.io/pypi/pyversions/smart-srt-translator)
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+
 A lightweight, extensible Python package for translating SRT subtitle files, with optional audio probe support and pluggable providers (OpenAI, etc.).
 
 Features
@@ -12,6 +16,7 @@ Features
 
 Quick Start
 -----------
+- Install (PyPI): `python -m pip install smart-srt-translator[openai]`
 - Create venv (choose one, depending on your setup):
   - Windows: `py -m venv .venv` or `python -m venv .venv`
   - macOS/Linux: `python3 -m venv .venv` (or `python -m venv .venv`)
@@ -115,3 +120,9 @@ Further Docs
 ------------
 - Parameter reference: see PARAMS.md for a concise overview of modes, flags, defaults, and recipes.
  - Readability guide: see READABILITY.md for DE presets and timing expansion tips.
+
+Links
+-----
+- PyPI: https://pypi.org/project/smart-srt-translator/
+- Source: https://github.com/ddumdi11/smart-srt-translator
+- Issues: https://github.com/ddumdi11/smart-srt-translator/issues
