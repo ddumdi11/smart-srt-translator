@@ -126,3 +126,17 @@ Links
 - PyPI: https://pypi.org/project/smart-srt-translator/
 - Source: https://github.com/ddumdi11/smart-srt-translator
 - Issues: https://github.com/ddumdi11/smart-srt-translator/issues
+
+Easter Egg
+----------
+<details>
+<summary>A tiny poem from our CI burrow</summary>
+
+I thump my paws at version’s birth,
+A wheel rolls out, a sdist’s mirth.
+On release winds I softly fly,
+From Actions’ burrow to PyPI.
+Carrots cached, duplicates skipped—
+Ship it clean, neatly shipped!
+
+</details>
