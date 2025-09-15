@@ -6,6 +6,7 @@ on:
 
 jobs:
   build-and-publish:
+    if: github.event.release.prerelease == false
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -29,4 +30,3 @@ jobs:
         with:
           password: ${{ secrets.PYPI_API_TOKEN }}
           skip-existing: true
-
