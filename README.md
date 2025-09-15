@@ -12,6 +12,7 @@ Features
 
 Quick Start
 -----------
+- Install (PyPI): `python -m pip install "smart-srt-translator[openai]"` (zsh/PowerShell: Extras in Anführungszeichen setzen)
 - Create venv (choose one, depending on your setup):
   - Windows: `py -m venv .venv` or `python -m venv .venv`
   - macOS/Linux: `python3 -m venv .venv` (or `python -m venv .venv`)
@@ -19,7 +20,7 @@ Quick Start
     - PowerShell: `.venv\Scripts\Activate.ps1`
     - CMD: `.venv\Scripts\activate.bat`
     - bash/zsh: `source .venv/bin/activate`
-- Install (local): `python -m pip install -e .[openai]` (omit `[openai]` to skip OpenAI extra)
+- Install (local): `python -m pip install -e ".[openai]"` (omit `[openai]` to skip OpenAI extra; zsh/PowerShell: Extras quoten)
 - Translate (CLI):
   - Smart (default): `srt-translate translate Sample/firstdayinnewhospital.srt en de`
   - Provider is `openai` by default; mode `smart` by default.
