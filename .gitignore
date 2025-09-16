@@ -56,3 +56,4 @@ smart_srt_translator.egg-info/
 
 # Large media samples should not be versioned
 Sample/*.mp4
+BugsAndScreenshots/
